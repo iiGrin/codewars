@@ -5,8 +5,8 @@
 //SOLUTION
 function findAverage(array) {
   let resArr = 0;
-  if (array == []) {
-    return 0;
+  if (array == 0) {
+    return (resArr = 0);
   } else {
     array.forEach(function (item) {
       resArr += item;
