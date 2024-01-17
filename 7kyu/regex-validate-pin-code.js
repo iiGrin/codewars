@@ -9,9 +9,7 @@
 
 //SOLUTION
 function validatePIN(pin) {
-  if (pin.length == 4 && pin % 1 == 0) {
-    return true;
-  } else if (pin.length == 6 && pin % 1 == 0) {
+  if (/^(\d{4}|\d{6})$/.test(pin)) {
     return true;
   } else {
     return false;
